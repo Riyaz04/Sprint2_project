@@ -1,0 +1,98 @@
+.employee-form {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.employee-form h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 10px 0px 10px 0px rgba(0, 1, 0, 0.1);
+
+
+}
+
+.employee-form div {
+    margin-bottom: 20px;
+}
+
+.employee-form input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.employee-table {
+    width: 900px;
+    border-collapse: collapse;
+    /* margin-top: 20px; */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-table th,
+.employee-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.employee-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.employee-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.employee-table tbody tr:hover {
+    background-color: #e6f7ff;
+}
+
+.employee-table button {
+    cursor: pointer;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.employee-table button:hover {
+    background-color: #ff1a1a;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}

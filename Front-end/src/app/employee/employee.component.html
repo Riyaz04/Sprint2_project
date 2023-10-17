@@ -1,0 +1,56 @@
+<div class="employee-form">
+  <h2>Add Employee</h2>
+  <div>
+    <label for="efname">First Name:</label>
+    <input id="efname" [(ngModel)]="newEmployee.efname" placeholder="First Name">
+  </div>
+  <div>
+    <label for="elname">Last Name:</label>
+    <input id="elname" [(ngModel)]="newEmployee.elname" placeholder="Last Name">
+  </div>
+  <div>
+    <label for="eedu">Education:</label>
+    <input id="eedu" [(ngModel)]="newEmployee.eedu" placeholder="Education">
+  </div>
+  <div>
+    <label for="eemail">Email:</label>
+    <input id="eemail" [(ngModel)]="newEmployee.eemail" placeholder="Email">
+  </div>
+  <div>
+    <label for="eadd">Address:</label>
+    <input id="eadd" [(ngModel)]="newEmployee.eadd" placeholder="Address">
+  </div>
+  <div>
+    <label for="ephone">Phone:</label>
+    <input id="ephone" [(ngModel)]="newEmployee.ephone" placeholder="Phone">
+  </div>
+  <button class="btn" (click)="saveEmployee()">Add Employee</button>
+</div>
+
+<table class="employee-table">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Education</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Phone</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td>{{ employee.efname }}</td>
+      <td>{{ employee.elname }}</td>
+      <td>{{ employee.eedu }}</td>
+      <td>{{ employee.eemail }}</td>
+      <td>{{ employee.eadd }}</td>
+      <td>{{ employee.ephone }}</td>
+      <td>
+        <button (click)="updateEmployee(employee)">Update</button>
+        <button (click)="deleteEmployee(employee.eid)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

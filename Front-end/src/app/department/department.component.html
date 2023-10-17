@@ -1,0 +1,45 @@
+<div class="department-container">
+  <h2>Departments</h2>
+  <div class="form-group">
+    <label for="dname">Department Name</label>
+    <input [(ngModel)]="newDepartment.dname" type="text" id="dname" placeholder="Department Name">
+  </div>
+  <div class="form-group">
+    <label for="designation">Designation</label>
+    <input [(ngModel)]="newDepartment.designation" type="text" id="designation" placeholder="Designation">
+  </div>
+  <div class="form-group">
+    <label for="demail">Email</label>
+    <input [(ngModel)]="newDepartment.demail" type="email" id="demail" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="dphone">Phone</label>
+    <input [(ngModel)]="newDepartment.dphone" type="text" id="dphone" placeholder="Phone">
+  </div>
+  <button (click)="saveDepartment()">Add Department</button>
+
+  <h3>Department List</h3>
+  <table class="department-table">
+    <thead>
+      <tr>
+        <th>Department Name</th>
+        <th>Designation</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let department of departments">
+        <td>{{ department.dname }}</td>
+        <td>{{ department.designation }}</td>
+        <td>{{ department.demail }}</td>
+        <td>{{ department.dphone }}</td>
+        <td>
+          <button (click)="updateDepartment(department)">Update</button>
+          <button (click)="deleteDepartment(department.did)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

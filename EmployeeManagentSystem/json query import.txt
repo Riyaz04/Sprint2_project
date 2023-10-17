@@ -1,0 +1,242 @@
+{
+  "info": {
+    "_postman_id": "your-collection-id-here",
+    "name": "School Project API",
+    "description": "API requests for School Project",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Department",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"dname\": \"Department Name\",\n\t\"demail\": \"department@example.com\",\n\t\"dphone\": 1234567890,\n\t\"designation\": \"Department Designation\",\n\t\"employee\": {\n\t\t\"efname\": \"Employee Name\",\n\t\t\"elname\": \"Employee Last Name\",\n\t\t\"ephone\": 9876543210,\n\t\t\"eemail\": \"employee@example.com\",\n\t\t\"eedu\": \"Employee Education\",\n\t\t\"eadd\": \"Employee Address\"\n\t}\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/department/signup",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "department",
+            "signup"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Departments",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/department/findAll",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "department",
+            "findAll"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Department by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/department/find/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "department",
+            "find",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Department",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"dname\": \"Updated Department Name\",\n\t\"demail\": \"updated.department@example.com\",\n\t\"dphone\": 1234567890,\n\t\"designation\": \"Updated Department Designation\",\n\t\"employee\": {\n\t\t\"efname\": \"Updated Employee Name\",\n\t\t\"elname\": \"Updated Employee Last Name\",\n\t\t\"ephone\": 9876543210,\n\t\t\"eemail\": \"updated.employee@example.com\",\n\t\t\"eedu\": \"Updated Employee Education\",\n\t\t\"eadd\": \"Updated Employee Address\"\n\t}\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/department/editDepartment/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "department",
+            "editDepartment",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Department",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/department/deleteDepartment/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "department",
+            "deleteDepartment",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Employee",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"efname\": \"Employee Name\",\n\t\"elname\": \"Employee Last Name\",\n\t\"ephone\": 9876543210,\n\t\"eemail\": \"employee@example.com\",\n\t\"eedu\": \"Employee Education\",\n\t\"eadd\": \"Employee Address\"\n\t}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/employee/signup",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employee",
+            "signup"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Employees",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/employee/findAll",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employee",
+            "findAll"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Employee by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/employee/find/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employee",
+            "find",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Employee",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"efname\": \"Updated Employee Name\",\n\t\"elname\": \"Updated Employee Last Name\",\n\t\"ephone\": 9876543210,\n\t\"eemail\": \"updated.employee@example.com\",\n\t\"eedu\": \"Updated Employee Education\",\n\t\"eadd\": \"Updated Employee Address\"\n\t}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/employee/editEmployee/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employee",
+            "editEmployee",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Employee",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/employee/deleteEmployee/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employee",
+            "deleteEmployee",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
