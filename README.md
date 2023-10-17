@@ -1,8 +1,5 @@
 # Sprint2_project
 
-Certainly! Here's a template for your README file:
-
----
 
 # Employee Management System
 
@@ -16,7 +13,7 @@ This project is developed for [Anudip Foundation](https://www.anudip.org/) as a 
 
 ## Acknowledgments
 We extend our sincere thanks to our teachers:
-- Parchi Ma'am
+- Prachi Ma'am
 - Kanika Ma'am
 
 ## Key Features
