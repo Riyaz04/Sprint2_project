@@ -3,7 +3,7 @@
 
 # Employee Management System
 
-This project is developed for [Anudip Foundation](https://www.anudip.org/) as a part of our team's contribution to the community. The Employee Management System helps streamline the process of managing employee data efficiently. 
+The Employee Management System helps streamline the process of managing employee data efficiently. 
 
 ## Team Members
 - Riyaz Ansari
